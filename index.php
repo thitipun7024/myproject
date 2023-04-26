@@ -44,4 +44,3 @@ include('Bootstrap_sc.php');
 </body>
 </html>
 <?php include('footer.php');?>
-html
