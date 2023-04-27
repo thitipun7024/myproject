@@ -1,1 +1,1 @@
-SELECT country FROM countries WHERE id = 51
+SELECT country FROM countries WHERE id = (67,36)
