@@ -1,0 +1,1 @@
+SELECT country FROM countries WHERE id = 51
