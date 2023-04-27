@@ -1,1 +1,1 @@
-SELECT country FROM countries WHERE id = (67,36)git
+SELECT country FROM countries WHERE id = 51
