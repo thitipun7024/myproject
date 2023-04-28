@@ -1,4 +1,4 @@
-/*SELECT TOP (1000) [id]
+SELECT TOP (1000000) [id]
       ,[brn]
       ,[bnname]
       ,[address]
@@ -11,7 +11,7 @@
       ,[district]
       ,[headbranch]
       ,[area]
-  FROM [IT].[dbo].[MasterControlAddress] */
+  FROM [IT].[dbo].[MasterControlAddress] 
 
 SELECT id,brn,bnname,mobile,region,internal
 FROM MasterControlAddress
@@ -20,7 +20,14 @@ IN (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจท�
 
 SELECT * FROM MasterControlAddress
 
-SELECT count(MasterControlAddress.region) AS regiontotal,MasterControlAddress.region
+SELECT MasterControlAddress.region,count(MasterControlAddress.region) AS regiontotal
 FROM MasterControlAddress
 WHERE region 
 IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจที่ 4') GROUP BY region
+
+SELECT count(MasterControlAddress.region) AS regiontotal
+FROM MasterControlAddress
+WHERE region 
+IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจที่ 4') GROUP BY region
+
+SELECT FROM INNER JOIN WHERE 
