@@ -29,5 +29,3 @@ SELECT count(MasterControlAddress.region) AS regiontotal
 FROM MasterControlAddress
 WHERE region 
 IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจที่ 4') GROUP BY region
-
-SELECT FROM INNER JOIN WHERE 
