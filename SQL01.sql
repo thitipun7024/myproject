@@ -28,4 +28,4 @@ IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจท�
 SELECT count(MasterControlAddress.region) AS regiontotal
 FROM MasterControlAddress
 WHERE region 
-IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจที่ 4') GROUP BY region 555
+IN  (N'ภาคธุรกิจที่ 3',N'ภาคธุรกิจที่ 4') GROUP BY region
