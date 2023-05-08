@@ -7,7 +7,7 @@ ALTER PROC [dbo].[storetest] @id NVARCHAR(255),
 @country NVARCHAR(255),
 @area NVARCHAR(255),
 @area_sq_mi NVARCHAR(255),
-@total FLOAT,
+@total FLOAT(5,5),
 @note NVARCHAR(255),
 @countryid NVARCHAR(255)
     AS
