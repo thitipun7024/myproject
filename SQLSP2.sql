@@ -3,12 +3,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 --StoredProcedure
-ALTER PROC [dbo].[storetest] @id NVARCHAR(255),
+ALTER PROC [dbo].[storetest] @id FLOAT,
 @country NVARCHAR(255),
-@area NVARCHAR(255),
-@area_sq_mi NVARCHAR(255),
-@total FLOAT(5,5),
-@note NVARCHAR(255),
+@area FLOAT,
+@area_sq_mi FLOAT,
+@total FLOAT,
+@note NVARCHAR(MAX),
 @countryid NVARCHAR(255)
     AS
         BEGIN
