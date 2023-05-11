@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[stock] (
+CREATE TABLE [IT].[dbo].[stock] (
    id INT IDENTITY PRIMARY KEY,
    asset NVARCHAR(50) NULL,
    serial_number NVARCHAR(50) NULL,
@@ -10,6 +10,6 @@ CREATE TABLE [dbo].[stock] (
    guarantee NVARCHAR(50) NULL,
    end_guarantee NVARCHAR(50) NULL,
    stat NVARCHAR(50) 
-      CHECK (stat IN ('1', '2')) 
-      DEFAULT '1' NULL
+      CHECK (stat IN ('1', '2')) NULL
 );
+
